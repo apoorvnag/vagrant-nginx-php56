@@ -31,11 +31,10 @@ sudo apt-get update
 sudo apt install git
 
 # Install Composer
-# git installed already
-# php installed already
-# curl in order to download Composer
-# The php-mbstring package is necessary to provide functions for a library we'll be using
-# unzip for extracting zipped packages
+# git and php are installed already
+# curl to download Composer
+# php5.6-mbstring package to provide functions for a library
+# unzip to extract zipped packages
 sudo apt-get update
 sudo apt-get install curl php5.6-mbstring unzip
 cd ~
