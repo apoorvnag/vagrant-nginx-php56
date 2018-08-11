@@ -7,7 +7,6 @@
 
 # To fix no locale in Ubuntu
 sudo apt-get install -y language-pack-en-base
-sudo apt-get update
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 sudo apt-get install -y software-properties-common
@@ -15,10 +14,9 @@ sudo apt-get update
 
 # Install PHP5.6
 sudo LC_ALL=C.UTF-8 add-apt-repository ppa:ondrej/php
-sudo apt-get update
 # sudo add-apt-repository ppa:ondrej/php
 # sudo add-apt-repository ppa:ondrej/nginx-mainline
-# sudo apt-get update
+sudo apt-get update
 sudo apt-get install php5.6-fpm
 
 # Install Nginx
@@ -53,7 +51,3 @@ sudo apt-get install nodejs
 nodejs -v
 npm -v
 sudo apt-get install build-essential
-
-
-
-
