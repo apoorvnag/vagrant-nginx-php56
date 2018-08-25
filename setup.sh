@@ -51,3 +51,16 @@ sudo apt-get install nodejs
 nodejs -v
 npm -v
 sudo apt-get install build-essential
+
+
+
+# Install Image magick
+sudo apt-get update
+sudo apt-get autoremove
+sudo apt-get install libmagickwand-dev
+sudo apt-get install imagemagick
+
+# Install pecl
+sudo apt-get install php-pear
+sudo apt-get install php5-dev
+sudo apt-get install libcurl3-openssl-dev
