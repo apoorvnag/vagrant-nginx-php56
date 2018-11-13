@@ -48,3 +48,7 @@ sudo apt-get install -y nodejs
 nodejs -v
 npm -v
 sudo apt-get install -y build-essential
+
+# Install Java 7
+sudo apt-get -y upgrade
+sudo apt-get install -y default-jdk
