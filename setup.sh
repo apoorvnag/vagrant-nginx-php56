@@ -64,3 +64,10 @@ rm elasticsearch-2.3.0.zip
 
 # Write this line in elasticsearch.yml file to allow http://192.168.33.10:9200/
 # network.host: 0.0.0.0
+
+
+# Install Percona DB
+wget https://repo.percona.com/apt/percona-release_0.1-6.$(lsb_release -sc)_all.deb
+sudo dpkg -i percona-release_0.1-6.$(lsb_release -sc)_all.deb
+sudo apt-get update
+sudo apt-get install -y percona-server-server-5.7
