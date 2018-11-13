@@ -52,3 +52,15 @@ sudo apt-get install -y build-essential
 # Install Java 7
 sudo apt-get -y upgrade
 sudo apt-get install -y default-jdk
+
+# Install Unzip
+sudo apt-get install unzip
+
+# Install ElasticSearch 2.3.0
+cd /vagrant
+wget https://download.elasticsearch.org/elasticsearch/release/org/elasticsearch/distribution/zip/elasticsearch/2.3.0/elasticsearch-2.3.0.zip
+unzip elasticsearch-2.3.0.zip
+rm elasticsearch-2.3.0.zip
+
+# Write this line in elasticsearch.yml file to allow http://192.168.33.10:9200/
+# network.host: 0.0.0.0
