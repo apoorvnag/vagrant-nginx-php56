@@ -67,7 +67,9 @@ rm elasticsearch-2.3.0.zip
 
 
 # Install Percona DB
+cd ~
 wget https://repo.percona.com/apt/percona-release_0.1-6.$(lsb_release -sc)_all.deb
 sudo dpkg -i percona-release_0.1-6.$(lsb_release -sc)_all.deb
 sudo apt-get update
 sudo apt-get install -y percona-server-server-5.7
+rm percona-release_0.1-6.$(lsb_release -sc)_all.deb
